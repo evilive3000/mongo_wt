@@ -11,10 +11,8 @@ def get_status(topic=None):
 
 def get_config():
     print "graph_title MongoDB network stats"
-    print "graph_args --base 1000"
-    # print "graph_args --base 1000 -l 0"
-    # print "graph_vlabel mb ${graph_period}"
-    print "graph_category MongoDB_WT"
+    print "graph_args --base 1000 --lower-limit 0"
+    print "graph_category MongoDB"
     print "graph_vlabel bytes in (-) / out (+) per ${graph_period}"
 
     print "bytesOut.label Out"
@@ -25,10 +23,6 @@ def get_config():
     print "bytesIn.type COUNTER"
     print "bytesIn.draw LINE1"
     # print "bytesIn.cdef 0,bytesIn,-"
-
-    # print key + ".min 0"
-    # print key + ".max 500000"
-    # print key + ".draw LINE1"
 
 
 def get_data():
