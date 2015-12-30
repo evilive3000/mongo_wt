@@ -18,10 +18,14 @@ def get_config():
     print "bytesOut.label Out"
     print "bytesOut.type COUNTER"
     print "bytesOut.draw AREA"
+    print "bytesOut.min 0"
+    print "bytesOut.max 100000000"
 
     print "bytesIn.label In"
     print "bytesIn.type COUNTER"
-    print "bytesIn.draw LINE1"
+    print "bytesIn.draw LINE2"
+    print "bytesIn.min 0"
+    print "bytesIn.max 100000000"
     # print "bytesIn.cdef 0,bytesIn,-"
 
 
